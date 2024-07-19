@@ -4,10 +4,27 @@
     <title>
         Hello!
     </title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 
 <body>
-    Hello Word!
+    Hello World!
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+
+        let btn = document.getElementById('main-btn');
+
+        btn.addEventListener('click', function () {
+            if (tg.MainButton.isVisible) {
+                tg.MainButton.hide()
+            } else {
+                tg.MainButton.show()
+            }
+        });
+    </script>
+
+    <button id="main-btn">Click me!</button>
 </body>
 
 </html>
