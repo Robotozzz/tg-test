@@ -42,6 +42,10 @@
         let userid = document.createElement('p'); //создаем еще параграф 
         userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
         usercard.appendChild(userid); //добавляем
+
+        let alluser = document.createElement('p');
+        alluser.innerText = `${tg.initDataUnsafe.user}`;
+        usercard.appendChild(alluser);
     </script>
 </body>
 
