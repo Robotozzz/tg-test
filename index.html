@@ -44,7 +44,7 @@
         usercard.appendChild(userid); //добавляем
 
         let alluser = document.createElement('p');
-        alluser.innerText = `${tg.initDataUnsafe.user}`;
+        alluser.innerText = `${tg.initDataUnsafe.user.photo_url} ${tg.initDataUnsafe.user.is_premium}`;
         usercard.appendChild(alluser);
     </script>
 </body>
