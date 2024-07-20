@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <style>
+        .score {
+            margin: auto;
+            color: blue;
+        }
+    </style>
     Hello World!
     будущая супер тапалка
     <button id="main-btn">Click me!</button>
@@ -41,11 +47,19 @@
 
         let userid = document.createElement('p'); //создаем еще параграф 
         userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
-        usercard.appendChild(userid); //добавляем
+        // usercard.appendChild(userid); //добавляем
 
         let alluser = document.createElement('p');
         alluser.innerText = `${tg.initDataUnsafe.user.photo_url} ${tg.initDataUnsafe.user.is_premium}`;
         usercard.appendChild(alluser);
+
+        let score = document.createElement('p');
+        score.setAttribute('id', 'score');
+        score.innerText = 'вы натапали 0 черепах';
+        usercard.appendChild(score);
+
+
+
     </script>
 </body>
 
